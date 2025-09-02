@@ -2,7 +2,7 @@
 import { signIn, signOut, useSession } from 'next-auth/react'
 import React from 'react'
 
-const page = () => {
+const Page = () => {
 
 
   const {data : session} = useSession()
@@ -22,4 +22,4 @@ if(session) {
   )
 }
 
-export default page
+export default Page
